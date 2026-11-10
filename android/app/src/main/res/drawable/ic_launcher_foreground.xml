@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Meme dessin que desktop/src/icon_art.rs (icone Windows) : page blanche, bloc titre et lignes
+     de texte decoupes. Carre 0..1 de icon_art projete sur la zone visible 18..90 (x = 18 + 72u). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M31.68,36h44.64v36h-44.64z
+            M36,40.32h15.84v12.24h-15.84z
+            M55.44,40.32h16.56v3.6h-16.56z
+            M55.44,48.24h16.56v3.6h-16.56z
+            M36,56.88h36v3.6h-36z
+            M36,64.08h26.64v3.6h-26.64z" />
+</vector>

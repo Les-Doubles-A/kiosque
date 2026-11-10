@@ -1,0 +1,8 @@
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+main { padding-top: 1rem; }
+.bar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-bottom: 0.25rem; }
+#last-refresh { margin: 0; }
+#problems { margin: 0 0 0.75rem; color: var(--muted); font-size: 0.9rem; }
+#problems summary { cursor: pointer; font-weight: 600; }
+#problems ul { margin: 0.4rem 0 0; padding-left: 1.2rem; overflow-wrap: anywhere; }
+#empty { font-size: 1rem; }

@@ -1,0 +1,39 @@
+[package]
+name = "kiosque"
+version = "1.0.0"
+edition = "2024"
+description = "Actualites en direct depuis tes flux RSS/Atom, avec favoris"
+license = "MIT"
+
+[lib]
+name = "kiosque"
+path = "src/lib.rs"
+
+[[bin]]
+name = "Kiosque"
+path = "src/main.rs"
+
+[dependencies]
+eframe = { version = "0.37", default-features = false, features = [
+    "accesskit",
+    "default_fonts",
+    "glow",
+    "system_fonts",
+] }
+ureq = "2.12"
+quick-xml = "0.42"
+chrono = { version = "0.4", default-features = false, features = ["std", "clock"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+open = "5.4"
+dirs = "6"
+
+[target.'cfg(windows)'.build-dependencies]
+winresource = "0.1"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"

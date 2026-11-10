@@ -1,0 +1,20 @@
+// Messages affichés à l'utilisateur (français). Textes exacts des critères d'acceptation.
+export const MSG = {
+  INVALID_URL: "Saisis une adresse https:// valide.",
+  DUPLICATE: "Source déjà ajoutée.",
+  LIMIT: "Limite de 30 sources atteinte.",
+  NOT_A_FEED: "Ce n'est pas un flux RSS ou Atom.",
+  ADDING: "Ajout en cours…",
+  EMPTY_NO_SOURCE: "Aucune source. Ajoute un flux RSS pour commencer.",
+  EMPTY_NO_ITEM: "Aucun article pour l'instant.",
+  EMPTY_NO_UNREAD: "Aucun article non lu.",
+  REFRESHING: "Actualisation…",
+  OFFLINE: "Hors connexion ? Aucune source n'a répondu. Le fil enregistré reste affiché.",
+  confirmDelete: (title) => `Supprimer la source « ${title} » et tous ses articles ?`,
+  denied: (host) => `Autorisation refusée pour ${host} : la source n'a pas été ajoutée.`,
+  network: "Impossible de joindre la source (réseau coupé, ou redirection vers un autre domaine).",
+  timeout: "La source ne répond pas (délai de 10 secondes dépassé).",
+  tooLarge: "La réponse de la source est trop volumineuse (plus de 2 Mo).",
+  http: (status) => `La source a répondu par une erreur (code ${status}).`,
+  storage: "Impossible d'enregistrer les données (espace de stockage plein ?).",
+};

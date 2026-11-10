@@ -1,0 +1,21 @@
+node_modules/
+.env
+*.zip
+desktop/target/
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.kotlin/
+
+# Ajouts : builds, secrets et sorties d'installeur
+installer/Output/
+target/
+local.properties
+*.log
+__pycache__/
+.venv/
+.gradle/
+.kotlin/
+build/
+.claude/settings.local.json

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actualités</title>
+  <link rel="stylesheet" href="kiosque.css">
+  <link rel="stylesheet" href="news.css">
+</head>
+<body>
+  <main>
+    <h1 class="visually-hidden">Actualités</h1>
+    <div class="bar">
+      <button type="button" id="refresh-button">Actualiser</button>
+      <span id="last-refresh" class="muted"></span>
+    </div>
+    <p id="refresh-status" class="status" role="status"></p>
+    <p id="offline-banner" class="banner" role="alert" hidden></p>
+    <details id="problems" hidden>
+      <summary id="problems-summary"></summary>
+      <ul id="problems-list"></ul>
+    </details>
+    <p id="empty" class="muted" hidden></p>
+    <ol id="news" class="feed-list"></ol>
+  </main>
+  <script type="module" src="news-main.js"></script>
+</body>
+</html>

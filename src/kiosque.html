@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kiosque</title>
+  <link rel="stylesheet" href="kiosque.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Kiosque</h1>
+  </header>
+  <main>
+    <section class="sources" aria-labelledby="sources-title">
+      <h2 id="sources-title" tabindex="-1">Sources</h2>
+      <form id="add-form" novalidate>
+        <label for="feed-url">Adresse du flux (https://…)</label>
+        <div class="row">
+          <input id="feed-url" name="feed-url" type="url" inputmode="url" autocomplete="off" placeholder="https://exemple.fr/rss.xml">
+          <button type="submit" id="add-button">Ajouter</button>
+        </div>
+      </form>
+      <p id="status" class="status" role="status"></p>
+      <p id="error" class="error" role="alert"></p>
+      <ul id="sources-list" class="sources-list"></ul>
+    </section>
+
+    <section class="feed" aria-labelledby="feed-title">
+      <h2 id="feed-title" tabindex="-1">Articles</h2>
+      <div class="toolbar" role="group" aria-label="Outils du fil">
+        <button type="button" id="refresh-button">Actualiser</button>
+        <label for="source-filter">Source</label>
+        <select id="source-filter"><option value="">Toutes les sources</option></select>
+        <label class="check" for="unread-only"><input type="checkbox" id="unread-only"> Non lus seulement</label>
+        <span id="unread-count" class="unread-count" aria-live="polite"></span>
+      </div>
+      <p id="refresh-status" class="status" role="status"></p>
+      <p id="last-refresh" class="muted"></p>
+      <p id="offline-banner" class="banner" role="alert" hidden></p>
+      <div id="empty" class="empty" hidden>
+        <p id="empty-text"></p>
+        <button type="button" id="empty-add">Ajouter une source</button>
+      </div>
+      <ol id="feed" class="feed-list"></ol>
+    </section>
+  </main>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
